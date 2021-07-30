@@ -9,18 +9,19 @@ public class UnityAdManager {
     public static final String REWARD_ID = "your reward id";
     public static final String INTER_ID = "your inter id";
     public static final String BANNER_ID = "your banner id";
+    private static boolean testMode = false;
 
     public static void InitializeAd(Context context){
         final UnityAdsListener myAdsListener = new UnityAdsListener();
         UnityAds.addListener(myAdsListener);
-        UnityAds.initialize (context, GameID, false);
+        UnityAds.initialize (context, GameID, testMode);
     }
-
+                        //use this for Reward Ad
     public static void InitializeAd(Context context, IUnityAdsListener unityAdsListener){
         UnityAds.addListener(unityAdsListener);
-        UnityAds.initialize (context, GameID, false);
+        UnityAds.initialize (context, GameID, testMode);
     }
-
+                        //change layout with your layout, LinearLayout just example
     public static void showBannerAd(LinearLayout bannerLayout, Activity activity){
         UnityBannerListener bannerListener = new UnityBannerListener();
         BannerView bannerView = new BannerView(activity, BANNER_ID, new UnityBannerSize(320, 50));
