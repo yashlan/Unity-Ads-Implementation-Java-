@@ -5,21 +5,21 @@ import...
 
 public class UnityAdManager {
 
-    private static final String GAME_ID = "your game id";
+    private static final String GAME_ID   = "your game id";
     private static final String REWARD_ID = "your reward id";
-    private static final String INTER_ID = "your inter id";
+    private static final String INTER_ID  = "your inter id";
     private static final String BANNER_ID = "your banner id";
-    private static boolean testMode = false;
+    private static boolean testMode       = false;
 
     public static void InitializeAd(Context context){
         final UnityAdsListener myAdsListener = new UnityAdsListener();
         UnityAds.addListener(myAdsListener);
-        UnityAds.initialize (context, GameID, testMode);
+        UnityAds.initialize (context, GAME_ID, testMode);
     }
                         //use this for Reward Ad
     public static void InitializeAd(Context context, IUnityAdsListener unityAdsListener){
         UnityAds.addListener(unityAdsListener);
-        UnityAds.initialize (context, GameID, testMode);
+        UnityAds.initialize (context, GAME_ID, testMode);
     }
                         //change layout with your layout, LinearLayout just example
     public static void showBannerAd(LinearLayout bannerLayout, Activity activity){
