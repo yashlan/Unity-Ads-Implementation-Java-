@@ -5,10 +5,10 @@ import...
 
 public class UnityAdManager {
 
-    public static final String GameID = "your game id";
-    public static final String REWARD_ID = "your reward id";
-    public static final String INTER_ID = "your inter id";
-    public static final String BANNER_ID = "your banner id";
+    private static final String GAME_ID = "your game id";
+    private static final String REWARD_ID = "your reward id";
+    private static final String INTER_ID = "your inter id";
+    private static final String BANNER_ID = "your banner id";
     private static boolean testMode = false;
 
     public static void InitializeAd(Context context){
