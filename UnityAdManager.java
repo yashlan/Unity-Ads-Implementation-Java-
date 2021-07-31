@@ -9,7 +9,7 @@ public class UnityAdManager {
     public static final String REWARD_ID = "your reward id";
     public static final String INTER_ID = "your inter id";
     public static final String BANNER_ID = "your banner id";
-    private static Boolean testMode = false;
+    private static boolean testMode = false;
 
     public static void InitializeAd(Context context){
         final UnityAdsListener myAdsListener = new UnityAdsListener();
