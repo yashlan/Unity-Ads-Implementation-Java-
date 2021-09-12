@@ -9,7 +9,7 @@ public class UnityAdManager {
     private static final String REWARD_ID = "your reward id";
     private static final String INTER_ID  = "your inter id";
     private static final String BANNER_ID = "your banner id";
-    private static boolean testMode       = false;
+    private static final boolean testMode       = false;
 
     public static void InitializeAd(Context context){
         final UnityAdsListener myAdsListener = new UnityAdsListener();
@@ -94,6 +94,4 @@ public class UnityAdManager {
             // Called when the banner links out of the application.
         }
     }
-
-
 }
